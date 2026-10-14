@@ -57,6 +57,16 @@ This file describes a reusable process for reviewing repair features, including 
 3. 當任務涉及報修功能時，參考 `SKILL.md` 的檢查流程。／When the task involves a repair feature, follow the review process in `SKILL.md`.
 4. 將這個結構改寫成自己小組系統的版本。／Adapt this structure to your own group’s system.
 
+## 如何比較有沒有這些文件的差異？｜How to compare the difference
+
+請把本資料夾 `agent-files-example/` 當成一個獨立專案開啟，再建立新的 AI 開發對話。這樣 `AGENTS.md` 會成為專案根目錄的工作規則，`software-spec.md` 是系統需求依據，而 `skills/repair-review/SKILL.md` 則提供報修功能的檢查流程。
+
+Open `agent-files-example/` as a standalone project, then start a new AI development conversation. In this setup, `AGENTS.md` provides project-level rules, `software-spec.md` provides the system requirements, and `skills/repair-review/SKILL.md` provides a review workflow for repair features.
+
+請使用相同的功能問題，先在沒有這些文件的專案中詢問，再在本資料夾的新對話中詢問。完整的比較提示與觀察重點請參考 [`DEMO.md`](DEMO.md)。
+
+Use the same feature request first in a project without these files and then in a new conversation opened in this folder. See [`DEMO.md`](DEMO.md) for the comparison prompt and observation checklist.
+
 這些文件不綁定特定 AI 工具。不同工具可能要求不同的檔名或資料夾位置，使用前請依照所選工具的文件格式調整。
 
 These files are not tied to a single AI tool. Different tools may require different names or folder locations, so adapt the structure to the conventions of the tool you choose.
